@@ -6,117 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 3</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #aaaaaa;
-        }
-
-        div.container {
-            overflow: auto;
-        }
-
-        header {
-            background-color: #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            float: left;
-            width: 20%;
-            text-align: center;
-        }
-
-        nav ul {
-            padding-left: 0px;
-        }
-
-        nav li {
-            list-style: none;
-        }
-
-        nav li a {
-            background-color: #e5e5e5;
-            padding: 8px;
-            margin-top: 7px;
-            display: block;
-            width: 100%;
-            color: black;
-            font-weight: 700;
-        }
-
-        main {
-            float: left;
-            width: 60%;
-            padding: 0 20px;
-        }
-
-        .right {
-            background-color: #e5e5e5;
-            float: left;
-            width: 20%;
-            padding: 15px;
-            margin-top: 7px;
-
-            text-align: center;
-        }
-
-        footer {
-            background-color: #e5e5e5;
-            text-align: center;
-            padding: 10px;
-            margin-top: 7px;
-        }
-
-        /* For mobile phones: */
-        @media only screen and (max-width: 620px) {
-
-            nav,
-            main,
-            .right {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <!-- Encabezado -->
     <header>
-        <h1>Hola mundo!</h1>
+        <h1>Football Database</h1>
     </header>
     <div class="container">
         <!-- Navegación / contenedor izquierdo -->
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
         <!-- Contenedor principal -->
         <main>
             <section>
-                <h2>Lorum Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.</p>
+                <h2>Noticias</h2>
+                <article>
+                    <p>Estos fichajes fueron los <b>mejores</b> y <b>sorpendieron</b> en el mercado de pase 2021.</p>
+                    <p>Aqui encontraras todo sobre el fichaje de Messi por el PSG</p>
+                    <p><a href="https://cnnespanol.cnn.com/2021/08/10/lionel-messi-acuerdo-paris-saint-germain-reporte-trax/" target="_blank" >Ver mas</a></p>
+                    <hr>
+                </article>
+                <article>
+                    <p>Aqui encontraras todo sobre el fichaje de Crisitano Ronaldo por el Manchester United</p>
+                    <p><a href="https://www.20minutos.es/deportes/noticia/4805519/0/cifras-fichaje-cristiano-ronaldo-manchester-united/" target="_blank" >Ver mas</a></p>
+                    <hr>
+                </article>
+                <article>
+                    <p>Aqui encontraras todo sobre el fichaje del Kun Agüero por el Barcelona</p>
+                    <p><a href="https://www.marca.com/futbol/barcelona/2021/05/31/60ad0a7422601d39498b4654.html" target="_blank" >Ver mas</a></p>
+                    <hr>
+                </article>
+            </section>
+            <section>
+                <h2>Servicios</h2>
+                <article>
+                    <p>Aqui encontraras <b>todas las noticias</b> relacionadas con el futbol.</p>
+                    <ul>
+                        <li><a href="https://onefootball.com/es/inicio" target="_blank" >Onefootball</a></li>
+                        <li><a href="https://www.espn.com.ar/futbol/" target="_blank" >Espn</a></li>
+                    </ul>
+                </article>
             </section>
         </main>
         <!-- Contenedor secundario / derecho -->
         <div class="right">
-            <h2>Info</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <h2>Importante</h2>
+            <p>Enterate de los fichajes mas relevantes del 2021.</p>
         </div>
     </div>
     <!-- Pie de Página-->
     <footer>
-        <p>© copyright labcomII.com</p>
+        <p>© copyright FootballDatabase.com</p>
     </footer>
 
 </body>
