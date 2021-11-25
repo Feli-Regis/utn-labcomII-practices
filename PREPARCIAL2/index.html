@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRE PARCIAL 2</title>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <form action="" class="formulario">
+        <label for="cantidad-pesos">Ingrese cantidad de pesos argentinos:</label>
+        <input type="number" name="cantidad-pesos" id="cantidad-pesos">
+        <p id="alert-numero"></p>
+
+        <select name="selector" id="tipo-monedas">
+            <option value="" selected disabled>Ingrese moneda</option>
+            <option value="105.75">Dolar</option>
+            <option value="120.50">Euro</option>
+        </select>
+        <p id="alert-opcion"></p>
+
+        <button type="button" id="btn">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+    <hr>
+    <br>
+
+    <form action="">
+        <label for="nombre-moneda">Ingese nombre de la moneda:</label>
+        <input type="text" name="nombre-moneda" id="nombre-moneda">
+        <p id="alert-nombre"></p>
+
+        <label for="costo-nueva-moneda">Ingese costo de la moneda:</label>
+        <input type="number" name="costo-nueva-moneda" id="costo-nueva-moneda">
+        <p id="alert-costo"></p>
+
+        <button type="button" id="btn-nueva-moneda">Agregar moneda</button>
+    </form>
+
+</body>
+
+</html>
